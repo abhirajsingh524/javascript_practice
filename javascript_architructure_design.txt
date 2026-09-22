@@ -1,0 +1,83 @@
+IMPORTANT QUESTIONS
+
+1. What is the DOM and why do browsers create a DOM tree from HTML?
+Answer=>DOM (Document Object Model) is a tree-like representation of an HTML document created by the browser. Every HTML tag becomes an object (node) in the DOM.
+
+Why browsers create a DOM tree:
+
+To represent HTML as objects.
+
+JavaScript can access and modify HTML elements.
+
+Enables dynamic updates without reloading the page.
+structure!!
+Document
+ └── html
+      └── body
+           ├── h1
+           └── p
+2. Explain the relationship between HTML source code and the DOM.
+
+Answer:
+HTML is the source code, while the DOM is the browser-generated object model based on that HTML.
+
+HTML	                        DOM
+Static markup.	           Live object representation.
+Written by developer.	   Created by browser.
+Cannot change itself.	   Can be modified using JavaScript.
+<h1 id="title">Hello</h1>. document.getElementById("title").textContent = "Welcome";
+
+3. What is the document object in JavaScript?
+Answer:
+The document object represents the entire HTML page in JavaScript. It is the entry point for accessing and manipulating DOM elements.
+
+Uses
+Select elements.
+
+Create elements.
+
+Change content, style, and attributes
+
+example->document.getElementById("title");
+document.querySelector("p");
+
+4. Difference between querySelector() and querySelectorAll()
+Answer:
+querySelector()	                          querySelectorAll()
+Returns the first matching element.	     Returns all matching elements.
+Returns one element or null.             Returns a NodeList.
+Useful when only one element is needed.	 Useful when multiple elements are needed.
+document.querySelector(".skill");        document.querySelectorAll(".skill");
+
+5. Compare getElementById() with querySelector()
+Answer:
+
+getElementById()	                 querySelector()
+Selects element by ID only.       Selects using any CSS selector.
+Faster for IDs .	            More flexible.
+Returns one element.	        Returns first matching element.
+
+6. Difference between HTMLCollection and NodeList
+Answer:
+
+HTMLCollection	NodeList
+Collection of HTML elements.	Collection of DOM nodes.
+Usually live.	
+Usually static (querySelectorAll).
+
+Returned by getElementsByClassName().
+
+Returned by querySelectorAll().
+
+
+7. Explain Descendant, Child, Adjacent-Sibling, and Grouped CSS Selectors
+(a) Descendant Selector (Space)
+Selects all matching elements inside another elements
+All <p> inside <div> are selected.
+
+(b) Child Selector (>)
+Selects only direct children
+.Only direct <p> children of <div>.
+
+(c) Adjacent-Sibling Selector (+)
+Selects the next sibling immediately after an element.
