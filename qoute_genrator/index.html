@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=/, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main class="container">
+    <h1>Interactive text editor and Quote generator</h1>
+    <section class="panel" aria-labelledby="editorHeading">
+    <h2 id="editorHeading">Intractive Text Editor</h2>
+    <label for="editor">Enter your text</label>
+    <textarea id="editor" rows="10" placeholder="write something to convert...."></textarea>
+    </section>
+    <div class="controls">
+        <button id="uppercaseBtn">UpperCase</button>
+        <button id="lowercaseBtn">lowercase</button>
+        <button id="clearBtn">clear</button>
+        
+    </div>
+    <p id="editorStatus" aria-live="polite">0 character . 0 words </p>
+    <div id="preview" data-mode=""
+
+    <section class="panel" aria-labelledby="qouteHeading"><h2 id="qouteheading">QuoteGenerator</h2>
+        <blockquote id="qouteText"> click to begin with quote button.</blockquote>
+        <p id="qouteAuthor" class="author"></p>
+
+        <div class="controls">
+            <button id="newQuoteBtn">New Quote</button>
+            <button id="CopyQuoteBtn">copy quote</button>'
+            
+        <p id="quoteCategory" class="tag" aria-label="Quote-label"></p>
+        <p id="quoteStatus" aria-live="polite"></p>
+        </div>
+    </section>
+
+
+</main>
+    <script src="qouteeditor.js"></script>
+    
+</body>
+</html>
